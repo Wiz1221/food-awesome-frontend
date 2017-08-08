@@ -1,0 +1,32 @@
+#image {
+   width: 20vw;
+   overflow: hidden;
+}
+
+span{
+  font-size: 12px;
+  text-align: justify;
+}
+
+.col-sm-3.item{
+  margin-bottom: 20px;
+  height: 400px;
+}
+.restaurant-box:hover{
+  background-color: rgba(185, 192, 204, .3);
+}
+#share-button{
+ position: absolute;
+ right: 20px;
+ top: 10px;
+}
+#share-button:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.star-rating {
+  line-height:32px;
+  font-size:1.25em;
+}
+
+.star-rating .fa-star{color: orange;}

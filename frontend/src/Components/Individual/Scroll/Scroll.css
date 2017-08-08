@@ -1,0 +1,12 @@
+.scroll-item{
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 600px;
+}
+.btn.btn-primary{
+  margin-top: 20px;
+}
+
+#writeReviewButton {
+  margin-top: 10px;
+}

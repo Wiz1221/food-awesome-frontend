@@ -1,0 +1,22 @@
+#reviewListViewContainer {
+  margin-top: 20px;
+  padding: 0;
+}
+
+#search {
+  padding: 0;
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+ul {
+  padding-left: 0;
+}
+
+
+
+.reviewListContainer {
+  padding-right: 20px;
+}
