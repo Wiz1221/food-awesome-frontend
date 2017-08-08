@@ -24,3 +24,48 @@
   font-weight: bold;
   color: red;
 }
+.blue-button-primary{
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  background: #3498db;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  /*box-shadow: none;*/
+  border: none;
+  margin: 5px;
+}
+.blue-button-primary:hover{
+  background: #0482d1;
+  text-decoration: none;
+}
+.white-button-default{
+  font-family: Arial;
+  color: black;
+  font-size: 14px;
+  background: white;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  /*box-shadow: none;*/
+  border: 1px solid #cccccc;
+  margin: 5px;
+}
+.white-button-default:hover{
+  background: #cccccc;
+  text-decoration: none;
+}
+.red-button-danger {
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  background: #ff3d3d;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+  margin: 5px;
+}
+
+.red-button-danger:hover {
+  background: #cf0404;
+  text-decoration: none;
+}

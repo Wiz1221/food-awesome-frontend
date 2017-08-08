@@ -85,7 +85,7 @@ class Star extends Component {
 
           <input type="hidden" name="whatever1" className="rating-value" value="2.56"/>
         </span>
-        <button id="starClearButton" type="submit" className="btn btn-danger" onClick={this.clearStar}>Clear</button>
+        <button id="starClearButton" type="submit" className="red-button-danger" onClick={this.clearStar}>Clear</button>
       </div>
     );
   }

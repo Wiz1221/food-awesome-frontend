@@ -23,7 +23,7 @@ class RestaurantDetail extends Component {
   }
   render() {
     return (
-      <div className="row review">
+      <div className="row">
         <div className="col-xs-3 reviewImage">
           <img src={this.props.restaurantDetail.picHome} alt="restaurantPicture"/>
           <div className="star-rating" id={this.props.restaurantDetail._id}>
@@ -34,7 +34,7 @@ class RestaurantDetail extends Component {
             <span className="fa fa-star-o star" data-rating="5"></span>
           </div>
           <Link to={'/individual/' + this.props.restaurantDetail.name}>
-            <button type="submit" className="btn btn-info" onClick={this.onClick}>Go to restaurant page</button>
+            <button type="submit" className="blue-button-primary" onClick={this.onClick}>Go to restaurant page</button>
           </Link>
         </div>
         <div className="col-xs-9">
