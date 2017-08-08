@@ -19,7 +19,7 @@ export class AccountPage extends Component {
     this.state = {
       user: "",
       email: "",
-      password: "",
+      password: ""
     }
   }
 
@@ -92,28 +92,27 @@ export class AccountPage extends Component {
   // }
 
   onClick = (event) => {
-    let tab1 = document.getElementById("tab1");
-    let tab2 = document.getElementById("tab2");
-    let panel1 = document.getElementById("home");
-    let panel2 = document.getElementById("profile")
-
-    if(tab1.className==="active"){
-      tab2.classList.add("active");
-      panel2.classList.add("active");
-      tab1.classList.remove("active");
-      panel1.classList.remove("active");
-      // this.getReviewOfUser();
-    }else{
-      tab1.classList.add("active");
-      panel1.classList.add("active");
-      tab2.classList.remove("active");
-      panel2.classList.remove("active");
-    }
+    // console.log(event.target.name)
+    let panelArray=["profile","review", "admin"]
+    let tabArray = ["tab1","tab2","tab3"]
+    tabArray.forEach((tab,index) => {
+      if(this.props.user.email!=="dhea@dhea.com"&&tab==="tab3"){
+        return;
+      }
+      if(event.target.name===tab){
+        document.getElementById(tab).classList.add("active");
+        document.getElementById(panelArray[index]).classList.add("active");
+        return;
+      }
+      document.getElementById(tab).classList.remove("active");
+      document.getElementById(panelArray[index]).classList.remove("active");
+    })
 
   }
 
-  render() {
 
+
+  render() {
 
     return (
       <div>
@@ -125,14 +124,22 @@ export class AccountPage extends Component {
               <div className="card">
                 <ul className="nav nav-tabs" role="tablist">
                     <li id="tab1" role="presentation" className="active" onClick={this.onClick} >
-                      <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Profile</a>
+                      <a name="tab1" href="#home" aria-controls="home" role="tab" data-toggle="tab">Profile</a>
                     </li>
                     <li id="tab2" role="presentation" onClick={this.onClick}>
-                      <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">My Reviews</a>
+                      <a name="tab2" href="#profile" aria-controls="profile" role="tab" data-toggle="tab">My Reviews</a>
                     </li>
+                    {
+                      this.props.user.email==="dhea@dhea.com"?
+                      (
+                          <li id="tab3" role="presentation" onClick={this.onClick}>
+                            <a name="tab3" href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Admin</a>
+                          </li>
+                      ):null
+                    }
                 </ul>
                 <div className="tab-content">
-                  <div role="tabpanel" className="tab-pane active" id="home">
+                  <div role="tabpanel" className={"tab-pane active"} id="profile">
                     <div className="page-header">
                       <h3>Profile Information</h3>
                     </div>
@@ -199,10 +206,10 @@ export class AccountPage extends Component {
                       </div>
                     </form>
                     </div>
-                    <div role="tabpanel" className="tab-pane" id="profile">
+                    <div role="tabpanel" className={"tab-pane"} id="review">
                       <Review/>
                     </div>
-                    <div role="tabpanel" className="tab-pane" id="admin">
+                    <div role="tabpanel" className={"tab-pane "} id="admin">
                       <Admin/>
                     </div>
                   </div>
