@@ -70,7 +70,7 @@ class RestaurantItem extends Component {
             <span className="fa fa-star-o star" data-rating="4"></span>
             <span className="fa fa-star-o star" data-rating="5"></span>
           </div>
-          <span>{this.props.description}</span>
+          <span className="restaurant-item-description">{this.props.description}</span>
 
         </div>
       </div>
