@@ -59,13 +59,13 @@ class Header extends Component {
             <Link to="/login"><div className="header-button login-button">Login</div></Link> :
             ( <div>
                 <div className="col-sm-4">
-                  <div className="header-button user-name-display">{this.props.user.email}</div>
+                  <div className="header-display">{this.props.user.email}</div>
                 </div>
                 <div className="col-sm-4">
-                  <Link to="/account"><div className="header-button account-button">Your Profile</div></Link>
+                  <Link to="/account"><div className="header-display header-button account-button">Your Profile</div></Link>
                 </div>
                 <div className="col-sm-4">
-                  <a onClick={this.logout}><div className="header-button logout-button">Logout</div></a>
+                  <a onClick={this.logout}><div className="header-display header-button logout-button">Logout</div></a>
                 </div>
               </div>
             )
