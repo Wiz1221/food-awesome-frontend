@@ -7,10 +7,15 @@ span{
   font-size: 12px;
   text-align: justify;
 }
-
+.restaurant-image{
+  margin-top: 10px;
+}
 .col-sm-3.item{
   margin-bottom: 20px;
   height: 400px;
+}
+.item{
+  padding-bottom: 20px;
 }
 .restaurant-box:hover{
   background-color: rgba(185, 192, 204, .3);
@@ -19,6 +24,9 @@ span{
  position: absolute;
  right: 20px;
  top: 10px;
+}
+.restaurant-item-title{
+  font-weight: bold;
 }
 #share-button:hover{
   opacity: 0.5;

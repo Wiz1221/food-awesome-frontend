@@ -61,7 +61,8 @@ class RestaurantItem extends Component {
           </Link>
           {/*<img src=share id="share-button" className="hover"/>*/}
 
-          <h4>{this.props.name}</h4>
+          <h4 className="restaurant-item-title">{this.props.name}</h4>
+
           <div className="star-rating" id={this.props.id}>
             <span className="fa fa-star-o star" data-rating="1"></span>
             <span className="fa fa-star-o star" data-rating="2"></span>
