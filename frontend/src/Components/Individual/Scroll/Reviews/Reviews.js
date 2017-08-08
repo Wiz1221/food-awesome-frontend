@@ -62,14 +62,14 @@ export class Reviews extends Component {
   }
   showArrow = () => {
       return (<div>
-        <button type="button" className="btn btn-default" onClick={this.upVote}>
+        <button type="button" className="white-button-default" onClick={this.upVote}>
           <span className="glyphicon glyphicon-menu-up"></span>
         </button>
         <div className="vote-number">{
           this.state.votes
 
         }</div>
-        <button type="button" className="btn btn-default" onClick={this.downVote}>
+        <button type="button" className="white-button-default" onClick={this.downVote}>
           <span className="glyphicon glyphicon-menu-down"></span>
         </button>
       </div>)
@@ -91,7 +91,7 @@ export class Reviews extends Component {
   render() {
     return (
       <div className="row review">
-        <div className="col-xs-1">
+        <div className="col-xs-2">
           {this.showArrow()}
         </div>
         <div className="col-xs-3 reviewImage">
@@ -99,7 +99,7 @@ export class Reviews extends Component {
             this.props.review.picReview==="" ? noImage : this.props.review.picReview
           } alt="picReview"/>
         </div>
-        <div className="col-xs-5">
+        <div className="col-xs-4">
           <h4>{this.props.review.title}</h4>
           {this.props.review.description}
         </div>

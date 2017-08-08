@@ -60,7 +60,7 @@ export class Scroll extends Component {
         </div>
         </div>
         { this.state.popUp? this.adminMessage(): null }
-        <button id="writeReviewButton" type="submit" className="btn btn-primary" onClick={this.reviewBoxOpen}>Write a Review</button>
+        <button id="writeReviewButton" type="submit" className="blue-button-primary" onClick={this.reviewBoxOpen}>Write a Review</button>
         {
           this.state.isAddReviewOpen ? (
             <div>

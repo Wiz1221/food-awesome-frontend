@@ -136,11 +136,11 @@ class AddReview extends Component {
           </div>
           {
             this.state.submitSuccessful ? (
-              <button type="submit" className="btn btn-primary" onClick={this.closeReviewBox}>Close</button>
+              <button type="submit" className="blue-button-primary" onClick={this.closeReviewBox}>Close</button>
             ):(
               <div>
-              <button type="submit" className="btn btn-primary" onClick={this.addReview}>Submit</button>
-              <button type="submit" className="btn btn-danger" onClick={this.closeReviewBox}>Discard</button>
+              <button type="submit" className="blue-button-primary" onClick={this.addReview}>Submit</button>
+              <button type="submit" className="red-button-danger" onClick={this.closeReviewBox}>Discard</button>
               </div>
             )
           }
