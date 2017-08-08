@@ -154,7 +154,7 @@ export class AccountPage extends Component {
                       </div>
                       <div className="form-group">
                         <div className="col-sm-offset-3 col-sm-4">
-                          <button className="btn btn btn-primary" type="submit" onClick={this.updateProfile}>
+                          <button className="blue-button-primary" type="submit" onClick={this.updateProfile}>
                             <i className="fa fa-pencil">
                             </i>Update Profile
                           </button>
@@ -182,7 +182,7 @@ export class AccountPage extends Component {
                       </div>
                       <div className="form-group">
                         <div className="col-sm-offset-3 col-sm-4">
-                          <button className="btn btn-primary" type="submit" onClick={this.updatePassword}>
+                          <button className="blue-button-primary" type="submit" onClick={this.updatePassword}>
                             <i className="fa fa-lock">
                             </i>Change Password
                           </button>
@@ -198,7 +198,7 @@ export class AccountPage extends Component {
                         </p>
                         <input type="hidden" name="_csrf" defaultValue="El4kNAmRej76CfRNhiFTwFwmB3CgmHRe0B6sM=" />
                         <div className="col-sm-offset-3 col-sm-4">
-                          <button className="btn btn-danger" type="submit" onClick={this.deleteAccount}>
+                          <button className="red-button-danger" type="submit" onClick={this.deleteAccount}>
                             <i className="fa fa-trash">
                             </i>Delete my account
                           </button>

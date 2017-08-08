@@ -3,7 +3,7 @@
    overflow: hidden;
 }
 
-span{
+.restaurant-item-description{
   font-size: 12px;
   text-align: justify;
 }
@@ -11,13 +11,13 @@ span{
   margin-top: 10px;
 }
 .col-sm-3.item{
-  margin-bottom: 20px;
-  height: 400px;
-}
-.item{
   padding-bottom: 20px;
+  min-height: 400px;
 }
-.restaurant-box:hover{
+/*.item{
+  padding-bottom: 20px;
+}*/
+.item:hover{
   background-color: rgba(185, 192, 204, .3);
 }
 #share-button{
@@ -28,6 +28,9 @@ span{
 .restaurant-item-title{
   font-weight: bold;
 }
+/*.restaurant-item-description{
+  padding-bottom: 100px;
+}*/
 #share-button:hover{
   opacity: 0.5;
   filter: alpha(opacity=50);

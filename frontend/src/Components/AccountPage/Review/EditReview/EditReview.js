@@ -131,8 +131,8 @@ class EditReview extends Component {
                    onChange={this.onChange}
                    />
           </div>
-          <button type="submit" className="btn btn-primary" onClick={this.updateReview}>Update</button>
-          <button type="submit" className="btn btn-danger" onClick={this.deleteReview}>Delete</button>
+          <button type="submit" className="blue-button-primary" onClick={this.updateReview}>Update</button>
+          <button type="submit" className="red-button-danger" onClick={this.deleteReview}>Delete</button>
           </div>
         ): (<h1 id="defaultEditReviewLook"> Please select a review</h1>)
       }

@@ -132,9 +132,9 @@ class Compose extends Component {
                onChange={this.onChange}
                />
       </div>
-      <button type="submit" className="btn btn-primary" onClick={this.addNewRestaurant}>Add New Restaurant</button>
-      <button type="submit" className="btn btn-primary" onClick={this.updateRestaurant}>Update</button>
-      <button type="submit" className="btn btn-danger" onClick={this.deleteRestaurant}>Delete</button>
+      <button type="submit" className="blue-button-primary" onClick={this.addNewRestaurant}>Add New Restaurant</button>
+      <button type="submit" className="blue-button-primary" onClick={this.updateRestaurant}>Update</button>
+      <button type="submit" className="red-button-danger" onClick={this.deleteRestaurant}>Delete</button>
        </div>
     );
   }

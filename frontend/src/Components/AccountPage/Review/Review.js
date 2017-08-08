@@ -11,7 +11,7 @@ class Review extends Component {
   render() {
     return (
       <div>
-        <div className="row review">
+        <div className="row">
           <div className="col-md-3" id="ReviewList">
             <ReviewList/>
           </div>

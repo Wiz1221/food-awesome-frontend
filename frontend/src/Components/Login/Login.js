@@ -132,10 +132,10 @@ export class Login extends Component { // eslint-disable-line react/prefer-state
                          onChange={this.onChange}/>
                 </div>
                 <button type="submit"
-                        className="btn btn-primary submit"
+                        className="blue-button-primary"
                         onClick={this.localLogin}>Login</button>
                 <button type="submit"
-                        className="btn btn-default submit"
+                        className="white-button-default submit"
                         onClick={this.localSignup}>Sign up</button>
               </form>
             </div>
