@@ -1,0 +1,20 @@
+
+span{
+  font-size: 12px;
+  text-align: justify;
+}
+
+.item{
+  margin-bottom: 20px;
+}
+
+.star-rating {
+  line-height:32px;
+  font-size:1.25em;
+}
+
+.star-rating .fa-star{color: #ffcc00;}
+button.btn.btn-primary{
+  margin-top:0px;
+  margin-right: 10px;
+}
