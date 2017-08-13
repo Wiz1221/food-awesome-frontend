@@ -12,14 +12,14 @@ import { getUser} from './Actions/User';
 import { Provider } from 'react-redux';   // yarn add react-redux
 import { initStore } from './Store/Store';  //calling initStore function from Store file, already have createStore inside
 //API
-// import {setAdmin, getAdmin} from './API/generalAPI';
+import {setActiveRestaurant, getActiveRestaurant} from './API/AdminAPI';
 
 export const store = initStore();
 
-// store.subscribe( () => {
-//   const state = store.getState();
-//   setAdmin(state.admin);
-// })
+store.subscribe( () => {
+  const state = store.getState();
+  setActiveRestaurant(state.activeHome);
+})
 
 store.dispatch(getRestaurant());
 store.dispatch(getUser());

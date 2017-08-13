@@ -1,18 +1,20 @@
-export const setAdmin = (restaurants) => { //storing into local storage of the browser
-  if(Array.isArray(restaurants)){ // to prevent error being saved into local storage
-    localStorage.setItem('restaurants', JSON.stringify(restaurants)); // 1st arugment sets the name, 2nd arugment = item to store
+export const setActiveRestaurant = (restaurant) => { //storing into local storage of the browser
+  if(restaurant._id){ // to prevent error being saved into local storage
+    localStorage.setItem('restaurant', JSON.stringify(restaurant)); // 1st arugment sets the name, 2nd arugment = item to store
+  }else{
+    localStorage.setItem('userStatus', JSON.stringify({}));
   }
 }
 
-export const getAdmin = () => {
-  const restaurantsJSON = localStorage.getItem('restaurants');    //calling from localStorage using the name
-  let restaurants = [];
+export const getActiveRestaurant = () => {
+  const restaurantJSON = localStorage.getItem('restaurant');    //calling from localStorage using the name
+  let restaurant = {};
   try{
-    restaurants = JSON.parse(restaurantsJSON);
+    restaurant = JSON.parse(restaurantJSON);
   }catch(error){
-    console.log("Error: could not decode restaurants's from localStorage")
+    console.log("Error: could not decode restaurant from localStorage")
   }
-  return Array.isArray(restaurants) ? restaurants: [];
+  return typeof(restaurant)=== 'object' ? restaurant: {};
 }
 
 export const searchFunction = (thingToSearchIn,nameToSearch) => {

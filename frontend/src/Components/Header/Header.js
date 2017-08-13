@@ -37,12 +37,12 @@ class Header extends Component {
   render() {
     return (
       <div className="row header">
-        <div className="col-sm-2" id="logo">
+        <div className="col-sm-2 col-md-2 col-lg-2" id="logo">
           <Link to="/">
             <img src={logo} alt="logo"/>
           </Link>
         </div>
-        <div className="col-sm-7" id="headerSearchBar">
+        <div className="col-sm-4 col-md-5 col-lg-7" id="headerSearchBar">
           {/*<div className="input-group stylish-input-group">
             <input type="text" className="form-control"  placeholder="Search" />
             <span className="input-group-addon">
@@ -54,19 +54,17 @@ class Header extends Component {
         </div>*/}
         </div>
 
-        <div className="col-sm-4">
+        <div className="col-sm-6 col-md-5 col-lg-4 pull-right">
           { this.props.user.email === undefined ?
             <Link to="/login"><div className="header-button login-button">Login</div></Link> :
             ( <div>
-                <div className="col-sm-4">
-                  <div className="header-display">{this.props.user.email}</div>
-                </div>
-                <div className="col-sm-4">
-                  <Link to="/account"><div className="header-display header-button account-button">Your Profile</div></Link>
-                </div>
-                <div className="col-sm-4">
-                  <a onClick={this.logout}><div className="header-display header-button logout-button">Logout</div></a>
-                </div>
+                  <div className="header-display col-sm-4 col-md-4">{this.props.user.email}</div>
+
+                  <Link to="/account"><div className="header-display header-button account-button col-sm-4 col-md-4">Your Profile</div></Link>
+
+
+                  <a onClick={this.logout}><div className="header-display header-button logout-button col-sm-4 col-md-4">Logout</div></a>
+
               </div>
             )
           }

@@ -1,5 +1,7 @@
+import { getActiveRestaurant } from '../../API/AdminAPI';
+const initialActiveRestaurant = getActiveRestaurant();
 
-const ActiveHome = (state = {}, action) => {
+const ActiveHome = (state = initialActiveRestaurant? initialActiveRestaurant : {}, action) => {
   switch (action.type) {
     case 'ACTIVE_HOME':
       return action.restaurant
