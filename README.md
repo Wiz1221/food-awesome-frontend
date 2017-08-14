@@ -46,5 +46,5 @@ $ yarn start
 ### Development
 
 Want to contribute? Great!
-Contact: @dheamariesta, @wiz1221, @bryanleejh
+Contact: @dheamariesta, @Wiz1221, @bryanleejh
 
